@@ -1,12 +1,10 @@
-# ListViewColumSortDLL
-
-ListView Colum 정렬 DLL
+# ListView Colum 정렬 DLL
 개발 툴 : Microsoft Visual Studio 15
 대상 프레임워크 : .NET Framework 4 Client Profile
 
-1. 사용 방법
- 1) 사용자의 ListView객체에 ColumClick 이벤트 등록
- 2) ColumClick 이벤트 안에서 함수 호출
+## 사용 방법
+ 1. 사용자의 ListView객체에 ColumClick 이벤트 등록
+ 2. ColumClick 이벤트 안에서 함수 호출
 	/// <summary>
 	/// ListView ColumnClick 함수 내에서 클릭
 	/// 최초 클릭시 오름차순(ASC) 정렬 됨
@@ -17,7 +15,7 @@ ListView Colum 정렬 DLL
 	ItemSort.sort(System.Windows.Forms.ListView listView, ColumnClickEventArgs e, bool isNumber);
  
 
-2. 사용 예제
+## 사용 예제
 private void listView1_ColumnClick(object sender, ColumnClickEventArgs e) {
     if (e.Column == 0) { // 0번 칼럼: 숫자 정렬
 	ItemSort.sort(listView1, e, true);
