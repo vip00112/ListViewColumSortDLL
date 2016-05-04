@@ -6,18 +6,26 @@
 ## 사용 방법
  1. 사용자의 ListView객체에 ColumClick 이벤트 등록
  2. ColumClick 이벤트 안에서 함수 호출
+'
      /// <summary>
-     /// ListView ColumnClick 함수 내에서 클릭
-     /// 최초 클릭시 오름차순(ASC) 정렬 됨
-     /// </summary>
-     /// <param name="listView">정렬할 ListView 객체</param>
-     /// <param name="e">ColumnClick Event의 이벤트 객체</param>
-     /// <param name="isNumber">숫자형 정렬 여부</param>
-     ItemSort.sort(System.Windows.Forms.ListView listView, ColumnClickEventArgs e, bool isNumber);
 
+     /// ListView ColumnClick 함수 내에서 클릭
+
+     /// 최초 클릭시 오름차순(ASC) 정렬 됨
+
+     /// </summary>
+
+     /// <param name="listView">정렬할 ListView 객체</param>
+
+     /// <param name="e">ColumnClick Event의 이벤트 객체</param>
+
+     /// <param name="isNumber">숫자형 정렬 여부</param>
+
+     ItemSort.sort(System.Windows.Forms.ListView listView, ColumnClickEventArgs e, bool isNumber);
+'
 
 ## 사용 예제
-"`
+`
 private void listView1_ColumnClick(object sender, ColumnClickEventArgs e) {
     if (e.Column == 0) { // 0번 칼럼: 숫자 정렬
 	ItemSort.sort(listView1, e, true);
@@ -27,4 +35,4 @@ private void listView1_ColumnClick(object sender, ColumnClickEventArgs e) {
 	ItemSort.sort(listView1, e, false);
     }
 }
-"`
+`
