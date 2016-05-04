@@ -1,5 +1,3 @@
-# ListViewColumSortDLL
-
 ListView Colum 정렬 DLL
 개발 툴 : Microsoft Visual Studio 15
 대상 프레임워크 : .NET Framework 4 Client Profile
